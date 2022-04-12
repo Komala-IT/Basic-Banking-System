@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Select customer</title>
+        <style>
+            body {
+                background-image: url('sparkslogojiff .jpg');
+                 background-repeat: no-repeat;
+            }
+            body {
+                text-align: center;
+            }
+            form {
+                display: block;
+                box-sizing: border-box;
+                box-shadow: #111;
+                font-size:xx-large;
+                color:white;
+             }
+            input:focus {
+                background-color: rgb(103, 130, 172);
+
+            }
+            input{
+                width: 23%;
+                height: 12%;
+                padding: 12px 20px;
+                margin: 8px 0;
+            }
+            button{
+                border: none;
+                text-align: center;
+                color: black;
+                background-color:#80d4ff;
+                display: inline-block;
+                font-size: 24px;
+                margin: 12px 28px;
+                padding: 15px 32px;
+            }
+            ul{
+                list-style-type: none;
+                font-size: 26px;
+                margin: 50px;
+                padding: 0;
+                overflow: hidden;
+            }
+            li {
+                display: inline;
+                float: right;
+            }
+             li a{
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 24px;
+            }
+             li a:hover {
+                background-color: #111;
+            }
+        </style>
+        <script>
+            function display()
+            {
+            document.getElementById("displayarea").innerHTML = document.getElementById("sender").value; 
+            document.getElementById("sender").value = "";
+            document.getElementById("displayarea1").innerHTML = document.getElementById("receiver").value; 
+            document.getElementById("receiver").value = "";
+            document.getElementById("displayarea2").innerHTML = document.getElementById("amount").value; 
+            document.getElementById("amount").value = "";
+            }
+            </script>
+        <!DOCTYPE html>
+<html>
+    <head>
+        <title>Select customer</title>
+        <style>
+            body {
+                background-image: url('home2.jpg');
+                 background-repeat: no-repeat;
+            }
+            body {
+                text-align: center;
+            }
+            form {
+                display: block;
+                box-sizing: border-box;
+                box-shadow: #111;
+                font-size:xx-large;
+                color:white;
+             }
+            input:focus {
+                background-color: rgb(103, 130, 172);
+
+            }
+            input{
+                width: 23%;
+                height: 12%;
+                padding: 12px 20px;
+                margin: 8px 0;
+            }
+            button{
+                border: none;
+                text-align: center;
+                color: black;
+                background-color:#80d4ff;
+                display: inline-block;
+                font-size: 24px;
+                margin: 12px 28px;
+                padding: 15px 32px;
+            }
+            ul{
+                list-style-type: none;
+                font-size: 26px;
+                margin: 50px;
+                padding: 0;
+                overflow: hidden;
+            }
+            li {
+                display: inline;
+                float: right;
+            }
+             li a{
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 24px;
+            }
+             li a:hover {
+                background-color: #111;
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li><a href="about.html">About Page</a></li>
+            <li><a href="Transfer.html">Transaction History</a></li>
+            <li><a href="viewcustomer.html">View Customer</a></li> 
+            <li><a href="index.html">Home Page</a></li>
+        </ul>
+        <form name="transact" id="transact" method="get">
+           <label for="sender">Sender</label> 
+           <input type="email" id="sender" /><br><br>
+           <label for="receiver">Receiver</label> 
+           <input type="email" id="receiver" /><br><br>
+           <label for="amount">Amount</label>
+           <input type="number" id="amount"/><br><br>
+           <input type="submit" value="Transfer" onClick="display()"/>
+        </form>
+        <<table width="400px" align="center" border=0> 
+
+            <tr style="background-color:#8FBC8F;">
+            <td align="center"><b>Sender</b></td>
+            <td align="center"><b>Receiver</b></td>
+            <td align="center"><b>Amount</b></td>
+            </tr> 
+            <tr>
+            <td align="center"><div id="displayarea"></div></td>
+            <td align="center"><div id="displayarea1"></div></td>
+            <td align="center"><div id="displayarea2"></div></td>
+
+            </tr>
+            </table>
+           
+    </body>
